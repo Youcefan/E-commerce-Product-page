@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="logo-nav">
+           <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+            <div class="nav">
+            <ul>
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+              </div>
+        </div>
+        <div class="cart-profile">
+            <div class="cart"><img class="cArt" src="images/icon-cart.svg" alt="icon-cart"></div>
+            <div class="profile">
+                <img src="images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="head-mobile">
+        <div class="logo-nav-mobile">
+            <img id="menu" src="images/icon-menu.svg" alt="icon-menu">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="cart-profile-mobile">
+            <div class="cart"><img class="cArt" src="images/icon-cart.svg" alt="icon-cart"></div>
+            <img class="avatar" src="images/image-avatar.png" alt="">
+        </div>
+    </div>
+    <div class="ul-mobile">
+        <img id="close-mobile" src="images/icon-close.svg" alt="">
+        <ul>
+            <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+         <div class="image-product">
+        <div class="show-product">
+            <img id="nxt" src="images/icon-previous.svg" alt="">
+            <img id="show-product" src="images/image-product-1.jpg" alt="">
+            <img id="prv"src="images/icon-next.svg" alt="">
+        </div>
+        <div class="image-thumbnail">
+            <img class="active" id="1" src="images/image-product-1-thumbnail.jpg"  onclick="get(this.id)" alt="">
+            <img id="2" src="images/image-product-2-thumbnail.jpg"  onclick="get(this.id)" alt="">
+            <img id="3" src="images/image-product-3-thumbnail.jpg"onclick="get(this.id)" alt="">
+            <img id="4" src="images/image-product-4-thumbnail.jpg" onclick="get(this.id)" alt="">
+        </div>
+         </div>
+
+         <div class="info-product">
+            <p class="company">
+                sneaker company
+            </p>
+            <div class="title">
+                <h2>Fall Limited Edition Sneakers</h2>
+            </div>
+            <div class="info">
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+               <div class="priice">
+                <p class="price">$125.00 <span>50%</span></p>
+                <p class="last-price"><del>$250.00</del></p>
+            </div>
+            <div class="achat">
+                <div class="number">
+                    <img id="minus" src="images/icon-minus.svg" alt="icon-minus">
+                    <span id="number">0</span>
+                    <img id="plus" src="images/icon-plus.svg" alt="icon-plus">
+                </div>
+                <div class="add-cart">
+                    <img src="images/icon-cart.svg" alt="icon-cart">
+                    <span>Add to cart</span>
+                </div>
+            </div>
+         </div>
+         
+    </div>
+     <div class="continer">
+      </div>
+      <div class="click-img">
+        
+        <div class="image">
+            <img id="close-img" src="images/icon-close.svg" alt="">
+            <img id="pre" src="images/icon-previous.svg" alt="">
+             <img id="click-product" src="images/image-product-1.jpg" alt="">
+             <img id="nex" src="images/icon-next.svg" alt="">
+        </div>
+            <div class="thumbnail">
+                <img class="active" id="active1" name="1" src="images/image-product-1-thumbnail.jpg"  onclick="bet(this.name)" alt="">
+                <img id="active2" name="2" src="images/image-product-2-thumbnail.jpg"  onclick="bet(this.name)" alt="">
+                <img id ="active3" name="3" src="images/image-product-3-thumbnail.jpg"onclick="bet(this.name)" alt="">
+                <img id="active4" name="4" src="images/image-product-4-thumbnail.jpg" onclick="bet(this.name)" alt="">
+            </div>
+             
+      </div>
+
+      <div class="Cart" id="fiha">
+        <div class="title-cart">
+            <h2>Cart</h2>
+        </div>
+        <div class="content">
+            <div class="up">
+                <img src="images/image-product-1-thumbnail.jpg">
+                <p id="info"></p>
+                <img id="delete" src="images/icon-delete.svg" alt="icon-delete">
+            </div>
+            <div id="Checkout"><p>Checkout</p></div>
+        </div>
+      </div>
+      <div class="Cart" id="empty">
+        <div class="title-cart">
+            <h2>Cart</h2>
+        </div>
+        <div class="empty">
+            <h2>Your cart is empty.</h2>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
